@@ -1,0 +1,56 @@
+{
+    "name": "cherrynechou/dmlaravel",
+    "description": "laravel dm8 connection",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/DamengDB/dmlaravel/issues",
+        "source": "https://github.com/DamengDB/dmlaravel"
+    },
+    "authors": [
+        {
+            "name": "dengze",
+            "email": "dengze@dameng.com"
+        },{
+            "name": "cherrynechou",
+            "email": "iboy_2008@163.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-pdo": "*",
+        "illuminate/database": "^11",
+        "illuminate/pagination": "^11"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "files": [
+          "src/helper.php"
+        ],
+        "psr-4": {
+            "CherryneChou\\LaravelDm\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CherryneChou\\LaravelDm\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+          "dev-master": "11.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "CherryneChou\\LaravelDm\\Dm\\DmServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
