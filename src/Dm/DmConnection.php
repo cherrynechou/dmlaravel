@@ -4,11 +4,11 @@ namespace CherryneChou\LaravelDm\Dm;
 
 use Illuminate\Database\Connection;
 use PDO;
-use LaravelDm\Dm\Query\Grammars\DmGrammar as QueryGrammar;
-use LaravelDm\Dm\Query\DmBuilder as QueryBuilder;
-use LaravelDm\Dm\Query\Processors\DmProcessor as Processor;
-use LaravelDm\Dm\Schema\Grammars\DmGrammar as SchemaGrammar;
-use LaravelDm\Dm\Schema\DmBuilder as SchemaBuilder;
+use CherryneChou\LaravelDm\Dm\Query\Grammars\DmGrammar as QueryGrammar;
+use CherryneChou\LaravelDm\Dm\Query\DmBuilder as QueryBuilder;
+use CherryneChou\LaravelDm\Dm\Query\Processors\DmProcessor as Processor;
+use CherryneChou\LaravelDm\Dm\Schema\Grammars\DmGrammar as SchemaGrammar;
+use CherryneChou\LaravelDm\Dm\Schema\DmBuilder as SchemaBuilder;
 
 class DmConnection extends Connection
 {
